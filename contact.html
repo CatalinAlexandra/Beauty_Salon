@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="logo" href="atasari/Contact.png" type="image/x-icon/png" />
+    <link rel="icon" href="atasari/Contact.png" type="image/png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
+    </style>
+
     <title>Bun venit la Soft Glam by M!</title>
   </head>
   <body>
@@ -30,5 +41,52 @@
         </div>
       </nav>
     </header>
+    <section id="contact-info" class="bg-pink">
+      <div class="container">
+        <h2><span class="text-primary">Contactați</span>-ne</h2>
+        <p>
+          Aveți întrebări sau doriți să programați o întâlnire? Nu ezitați să ne
+          contactați!
+        </p>
+        <form action="">
+          <div class="form-group">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Trimite</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact-info">
+      <div class="container bg light">
+        <div class="box">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Adresa noastră</h3>
+          <p>Bulevardul Republicii, Sinaia, România</p>
+        </div>
+        <div class="box bg-light">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Telefon</h3>
+          <p>+40 725 273 599</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>gilicel.maria@yahoo.com</p>
+        </div>
+      </div>
+    </section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+      <p>Soft Glam &copy; 2025 All Rights Reserved</p>
+    </footer>
   </body>
 </html>
