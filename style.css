@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rouge Script", regular 400;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffc0cb;
+  padding: 20px 50px;
+}
+
+.logo a,
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover {
+  background-color: #fae5aa;
+  color: #212121;
+  border-radius: 25%;
+  border: 0.5px solid black;
+  position: relative;
+  top: -5px;
+}
