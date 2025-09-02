@@ -1,15 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Rouge Script", regular 400;
+header {
+  font-family: "EB Garamond", bold;
 }
-nav {
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  size: 60px;
+}
+.container {
   display: flex;
   justify-content: space-between;
   background-color: #ffc0cb;
@@ -19,9 +24,14 @@ nav {
 .logo a,
 .menu {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
-
+.menu li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+}
 nav a {
   color: white;
   text-decoration: none;
@@ -29,21 +39,25 @@ nav a {
 
 #navbar ul {
   list-style: none;
-  float: right;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
-
 #navbar ul li {
-  float: left;
+  float: none;
+  flex-direction: row-reverse;
 }
 #navbar ul li a {
-  display: block;
-  padding: 20px;
+  display: inline-block;
+  padding: 10px;
   text-align: center;
 }
 #navbar ul li a:hover {
   background-color: #fae5aa;
   color: #212121;
-  border-radius: 25%;
+  border-radius: 30%;
   border: 0.5px solid black;
   position: relative;
   top: -5px;
