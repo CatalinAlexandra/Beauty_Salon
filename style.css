@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "EB Garamond", bold;
+  line-height: 1.5em;
+}
 
 a {
   color: #333;
@@ -18,9 +22,20 @@ h3 {
   padding-bottom: 20px;
 }
 
-p {
-  margin: 10px 0;
-  font-weight: 100;
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+.px-1 {
+  padding: 0 10px;
+}
+.px-2 {
+  padding: 0 20px;
 }
 
 .text-primary {
@@ -37,12 +52,18 @@ header {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffc0cb;
-  padding: 0px 20px;
-  max-width: 30000px;
+  max-width: 1100px;
   margin: auto;
+  padding: 0 20px;
+}
+
+.intro {
+  font-size: 19px;
+  text-align: center;
+  line-height: 1.7em;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
 .logo a,
@@ -57,24 +78,30 @@ header {
   display: inline;
   margin-left: 20px;
 }
+#navbar {
+  background-color: #ffc0cb;
+  color: #eeeeee;
+  overflow: hidden;
+}
 
 nav a {
   color: white;
   text-decoration: none;
 }
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
 
 #navbar ul {
   list-style: none;
+  float: right;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  gap: 10px;
 }
 
 #navbar ul li {
-  float: none;
-  flex-direction: row-reverse;
+  float: right;
 }
 
 #navbar ul li a {
@@ -90,6 +117,13 @@ nav a {
   border: 0.5px solid black;
   position: relative;
   top: -5px;
+}
+
+#navbar .current {
+  background-color: #fae5aa;
+  color: #212121;
+  border-radius: 30%;
+  border: 0.5px solid black;
 }
 
 #showcase {
@@ -152,8 +186,7 @@ nav a {
   background-color: #ffc0cb;
   color: white;
   text-align: center;
-  padding: 0px;
-  margin-top: 20px;
+  padding: 20px;
 }
 
 #contact-form .form-group {
@@ -176,16 +209,12 @@ nav a {
   height: 200px;
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus {
-  outline: none;
-}
 .bg-light {
-  background-color: #ffe3d8;
+  background-color: #fceec8;
 }
 
 .bg-pink {
-  background-color: #ee97c7;
+  background-color: #fdf5d4;
   color: #eee;
 }
 .btn {
@@ -200,4 +229,48 @@ nav a {
 
 .btn:hover {
   background-color: #fae5aa;
+}
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+#about-info .info-left {
+  width: 50%;
+  float: left;
+  min-height: 100%;
+}
+#reviews {
+  height: 550px;
+  width: 60%;
+  margin: auto;
+  background: url("../images/test-bg.jpg") no-repeat center center/cover;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+#reviews .review {
+  padding: 20px;
+  margin-bottom: 40px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+#reviews .review img {
+  width: 200px;
+  float: left;
+  padding-right: 10px;
+}
+
+#reviews h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #c53950;
+  font-size: 2em;
 }
