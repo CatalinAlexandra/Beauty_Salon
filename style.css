@@ -83,7 +83,7 @@ p {
 .text-primary {
   color: #c53950;
 }
-/* Show case */
+
 #showcase {
   background: url("https://img77.uenicdn.com/image/upload/v1551702233/category/shutterstock_1026952822.jpg")
     no-repeat center center/cover;
@@ -101,7 +101,6 @@ p {
   line-height: 1.2em;
 }
 
-/* home info */
 #home-info {
   height: 300px;
 }
@@ -142,10 +141,10 @@ p {
   background-color: #ffc0cb;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   margin-top: 20px;
 }
-/* contact form */
+
 #contact-form .form-group {
   margin-bottom: 20px;
 }
@@ -169,5 +168,4 @@ p {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  border-color: #000000;
 }
