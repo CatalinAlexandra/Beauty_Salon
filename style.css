@@ -180,3 +180,24 @@ nav a {
 #contact-form textarea:focus {
   outline: none;
 }
+.bg-light {
+  background-color: #ffe3d8;
+}
+
+.bg-pink {
+  background-color: #ee97c7;
+  color: #eee;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #c53950;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fae5aa;
+}
